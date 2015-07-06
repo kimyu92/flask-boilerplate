@@ -1,0 +1,9 @@
+# http://git-scm.com/docs/gitignore/
+
+__pycache__
+.DS_STORE
+*.pyc
+.coverage
+probe.txt
+env/
+*.swp
