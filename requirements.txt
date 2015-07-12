@@ -1,3 +1,6 @@
+# WSGI HTTP Server for UNIX
+gunicorn==19.3.0
+
 # Flask framework
 Flask==0.10.1
 
