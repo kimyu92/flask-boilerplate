@@ -34,21 +34,37 @@
 
 ## Overview Structure
 ├── .bowerrc
+
 ├── .gitignore
+
 ├── bower.json
+
 ├── package.json
+
 ├── app
+
 │   ├── app.py
+
 │   ├── static
+
 │   │   ├── bower_components
+
 │   │   ├── css
+
 │   │   │   └── style.css
+
 │   │   └── scripts
+
 │   └── templates
+
 │       ├── hello.html
+
 │       └── index.html
+
 ├── requirements.txt
+
 └── run.sh
+
 
 ## Frontend
 1. node (recommend to use nvm install v0.12 -> nvm use v0.12)
