@@ -40,6 +40,7 @@
 ├── app
 │   ├── app.py
 │   ├── static
+│   │   ├── bower_components
 │   │   ├── css
 │   │   │   └── style.css
 │   │   └── scripts
