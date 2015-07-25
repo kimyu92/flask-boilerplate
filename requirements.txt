@@ -1,16 +1,33 @@
+# Server
+# ================
 # WSGI HTTP Server for UNIX
 gunicorn==19.3.0
 
 # Flask framework
 Flask==0.10.1
 
-# Template Engine
-Jinja2==2.7.3
 
+# Database
+# ================
 # SQLAlchemy
-SQLAlchemy==1.0.6
+SQLAlchemy==1.0.8
 Flask-SQLAlchemy==2.0
 
 # Require PyMySQL for SQLAlchemy
 # connector for MySQL
 PyMySQL==0.6.6
+
+
+# View
+# ================
+# Template Engine
+Jinja2==2.7.3
+
+# Jade syntax template adapter for Django, Jinja2, Mako and Tornado templates
+pyjade==3.1.0
+
+
+# Security
+# ================
+# Simple integration of Flask and WTForms, including CSRF, file upload and Recaptcha integration.
+Flask-WTF==0.12

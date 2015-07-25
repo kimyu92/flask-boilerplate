@@ -4,7 +4,10 @@
 
 ## Instruction:
 
-1. install python3
+1. install python3, recommended thru brew install for mac osx user
+1. optional: brew install pyvenv
+1. optional: pyvenv name-env
+1. optional: source name-env/bin/activate
 1. pip3 install -r requirements.txt
 1. setup models and populate data (refer below)
 1. python3 __init__.py
@@ -14,7 +17,7 @@
 
 * Flask framework == 0.10.1
 * Jinja2 == 2.7.3 
-* SQLAlchemy == 1.0.6
+* SQLAlchemy == 1.0.8
 * Flask-SQLAlchemy == 2.0
 * PyMySQL == 0.6.6 //pure python MySQL connector
 

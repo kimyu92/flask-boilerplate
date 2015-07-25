@@ -1,9 +1,41 @@
 # http://git-scm.com/docs/gitignore/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
 
-__pycache__
+# C extensions
+*.so
+
+# Mac meta
 .DS_STORE
-*.pyc
-.coverage
+
 probe.txt
 env/
+uh-env/
 *.swp
+
+
+# Unit test / coverage reports
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# Rope
+.ropeproject
+
+# Django stuff:
+*.log
+*.pot
+
+# Sphinx documentation
+docs/_build/
