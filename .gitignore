@@ -9,6 +9,7 @@ __pycache__/
 # Mac meta
 .DS_STORE
 
+# Others
 probe.txt
 env/
 uh-env/
@@ -39,3 +40,11 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
+
+
+# NPM and Bower
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
