@@ -19,10 +19,10 @@ _basedir = os.path.abspath(os.path.dirname(__file__))
 DEBUG = False
 
 ADMINS = frozenset(['kimyu_92@hotmail.com'])
-SECRET_KEY = 'This string will be replaced with a proper key in production.'
+SECRET_KEY = ''
 
 # SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(_basedir, 'app.db')
-SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://perry:@127.0.0.1:3306/nba_flask'
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://kimyu92:123456@127.0.0.1:3306/flask_demo_db'
 DATABASE_CONNECT_OPTIONS = {}
 
 THREADS_PER_PAGE = 8
