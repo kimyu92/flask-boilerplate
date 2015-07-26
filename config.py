@@ -16,7 +16,10 @@ https://github.com/mitsuhiko/flask/wiki/Large-app-how-to
 
 """
 
+# Base directory
 _basedir = os.path.abspath(os.path.dirname(__file__))
+
+# Template directory
 template_dir = _basedir + '/templates/'
 loader = jinja2.FileSystemLoader(template_dir)
 environment = jinja2.Environment(loader=loader)
@@ -27,7 +30,10 @@ ADMINS = frozenset(['kimyu_92@hotmail.com'])
 SECRET_KEY = os.urandom(24)
 
 # SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(_basedir, 'app.db')
-SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://kimyu92:123456@127.0.0.1:3306/flask_demo_db'
+UH_DB_USER = os.getenv('UH_DB_USER', 'GuessMyName')
+UH_DB_PASSWORD = os.getenv('UH_DB_PASSWORD', 'GuessMyPassword')
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://' + UH_DB_USER+ ':' + UH_DB_PASSWORD +'@127.0.0.1:3306/flask_demo_db'
+
 DATABASE_CONNECT_OPTIONS = {}
 
 THREADS_PER_PAGE = 8
