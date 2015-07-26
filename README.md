@@ -9,8 +9,8 @@
 1. optional: pyvenv uh-env (since I placed uh-env is in .gitignore)
 1. optional: source uh-env/bin/activate
 1. pip3 install -r requirements.txt
-1. setup models and populate data (refer below)
-1. python3 ____init____.py
+1. setup database by making alias on .bashrc or .bash_profile (refer below)
+1. python3 server.py
 1. enjoy
 
 ## Dependency:
@@ -22,15 +22,25 @@
 * PyMySQL == 0.6.6 //pure python MySQL connector
 * ...
 
-## Modification Models.py
-* define models aka classes and relationships among them
-* under utils/ there is a ddl which helps to create a new schema
-* modify the db connector, schema name on config.py
-* refer models.sample.py thanks to @lazercorn
 
-## Setup models
-* refer modification Models.py 
-* run createDB.py
+## Setup database
+
+* open .bashrc or .bash_profile
+* export UH_DB_USER="WhateverMySQLUsername"
+* export UH_DB_PASSWORD="WhateverMySQLPassword"
+* export UH_DB_ADDRESS="WhateverServerAddress"
+* create db user thru MySQL user (mysql -u root -p)
+* CREATE USER 'USERNAME'@'localhost' IDENTIFIED BY 'MYPASSWORD';
+* populate models.py thru shell
+
+
+## Populate all models.py to database
+
+* python shell.py
+* from app import db
+* db.create_all()
+* exit()
+
 
 ## Overview Structure
 
@@ -57,13 +67,15 @@
     └── shell.py  
 
 
-## Frontend
+## Frontend to use react
 1. node (recommend to use nvm install v0.12 -> nvm use v0.12)
 1. node -v => # 0.12
 1. npm install -g bower
+1. npm install -g gulp
 1. npm install
 1. bower install
-* to add more dependency bower install package-name --save
+1. gulp clean && gulp
+* to add more dependency eg. jquery: bower install package-name --save
 
 
 ## Reference:
