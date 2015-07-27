@@ -1,2 +1,0 @@
-DROP DATABASE IF EXISTS flask_demo_db;
-CREATE DATABASE IF NOT EXISTS flask_demo_db;
