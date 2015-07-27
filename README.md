@@ -29,8 +29,14 @@
 * export UH_DB_USER="WhateverMySQLUsername"
 * export UH_DB_PASSWORD="WhateverMySQLPassword"
 * export UH_DB_ADDRESS="WhateverServerAddress"
-* create db user thru MySQL user (mysql -u root -p)
-* CREATE USER 'USERNAME'@'localhost' IDENTIFIED BY 'MYPASSWORD';
+* create db user thru MySQL user 
+```sql
+* mysql -u root -p -h hostaddress
+* CREATE USER 'USERNAME'@'hostname' IDENTIFIED BY 'MYPASSWORD';
+* CREATE DATABASE database name;
+* GRANT ALL ON database name.* TO 'kimyu92'@'hostname';
+```
+* tips: replace 'hostname' with '%' for remote server access
 * populate models.py thru shell
 
 
@@ -67,7 +73,7 @@
     └── shell.py  
 
 
-## Frontend to use react
+## Frontend Guide for Bower + React + Gulp
 1. node (recommend to use nvm install v0.12 -> nvm use v0.12)
 1. node -v => # 0.12
 1. npm install -g bower
